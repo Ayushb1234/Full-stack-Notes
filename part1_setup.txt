@@ -1,0 +1,112 @@
+Setup of MERN stack project
+----------------------------
+
+Requirements
+---------------
+1.Node.JS
+2.Docker
+3.VS Code
+4.Git
+
+Install PNPN
+-------------
+
+We’ll use pnpm because:
+
+faster
+better monorepo handling
+industry-grade
+
+``` Node.js
+npm install -g pnpm
+pnpm -v
+
+```
+
+# About PNPN -> Performant NPM , pnpm ek JavaScript package manager hai — exactly like npm and yarn, but zyada fast, disk-space efficient, aur modern projects ke liye optimized.
+
+# Package manager:
+-----------------
+
+1. dependencies download karta hai
+2. manage karta hai
+3. versions track karta hai
+4. node_modules banata hai
+
+
+----------------------------------------------------------
+
+Problem with npm
+
+Normal npm:
+
+bahut duplicate files store karta hai
+node_modules huge ho jata hai
+installs slow hote hain
+
+Example:
+Tumhare 10 projects hain aur sab me React installed hai.
+
+npm:
+
+React ko 10 baar alag-alag copy karega
+
+Result:
+
+storage waste
+slow install
+
+
+--------------------------------------------------------------------
+
+
+# pnpm Kya Different Karta Hai
+-------------------------------
+
+pnpm smartly:
+
+packages ko ek central global store me rakhta hai
+hard links/symlinks use karta hai
+duplicate copies avoid karta hai
+
+Matlab:
+React ek baar download hoga,
+baaki projects usko link karenge.
+
+Result:
+✅ Faster installs
+✅ Less storage
+✅ Better dependency management
+✅ Better monorepo support
+✅ Cleaner architecture
+
+
+-------------------------------------------------------
+
+
+
+Install package
+pnpm add express
+
+Install all dependencies
+pnpm install
+
+Remove package
+pnpm remove express
+
+Run project
+pnpm run dev
+
+--------------------------------------------------------------
+
+
+| Feature               | npm    | yarn   | pnpm      |
+| --------------------- | ------ | ------ | --------- |
+| Speed                 | Medium | Fast   | Very Fast |
+| Disk Usage            | High   | Medium | Low       |
+| Monorepo Support      | Okay   | Good   | Excellent |
+| Dependency Strictness | Loose  | Medium | Strong    |
+| Modern Dev Preference | Medium | Medium | High      |
+
+
+
