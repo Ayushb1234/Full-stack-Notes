@@ -109,4 +109,30 @@ pnpm run dev
 | Modern Dev Preference | Medium | Medium | High      |
 
 
+# To run the project in PNPN we have to install this thing
+-------------------------------------------------------------
 
+1. npm install -g pnpm
+
+2. pnpm dlx create-turbo@latest .
+
+--------------------------------------------------------------
+
+STEP 7 — CREATE FRONTEND APP
+
+Inside apps/
+
+Run:
+
+pnpm create next-app client
+
+Choose:
+
+TypeScript → Yes
+ESLint → Yes
+Tailwind → Yes
+src folder → Yes
+App Router → Yes
+Turbopack → Yes
+
+-----------------------------------------------------------------
